@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="HealthDataHl7v2Conector,healthdatahl7v2conector_3278,healthdatahl7v2conector_3278.main,healthdatahl7v2conector_3278.test" />
+    <profile name="sbt 2" modules="HealthDataHl7v2Conector.main,HealthDataHl7v2Conector.test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+    </profile>
+  </component>
+</project>

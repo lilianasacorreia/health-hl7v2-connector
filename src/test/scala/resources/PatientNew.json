@@ -1,0 +1,511 @@
+{
+  "resourceType": "Bundle",
+  "id": "ced514ae-3bd9-4d94-9eb9-bf3b81489f96",
+  "type": "transaction",
+  "timestamp": "2025-11-12T17:27:23.854+00:00",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "76da93ce-d0e7-429f-af89-9ebf2c0795a0",
+        "meta": {
+          "lastUpdated": "2025-01-08T00:00:00.000+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://exemplo.pt/fhir/extensions/birthplace",
+            "extension": [
+              {
+                "url": "country",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.ine.pt",
+                      "code": "PT"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "county",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.ine.pt",
+                      "code": "16"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "municipality",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.ine.pt",
+                      "code": "1606"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "parish",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.ine.pt",
+                      "code": "160611"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://spms.min-saude.pt/fhir/iop/extensions/nationality",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.ine.pt",
+                  "code": "PT",
+                  "display": "PORTUGAL"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PI",
+                  "display": "Patient internal identifier"
+                }
+              ],
+              "text": "Identificador sequencial do utente na entidade"
+            },
+            "system": "SONHO",
+            "value": "395381"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "CZ",
+                  "display": "Citizenship Card"
+                }
+              ],
+              "text": "Número de identificação civil"
+            },
+            "system": "IRN",
+            "value": "21455436"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Número do processo"
+            },
+            "system": "SONHO",
+            "value": "18007516"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "ZEFERINO",
+            "given": [
+              "ANTONIETA",
+              "TESTE",
+              "NAME"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1994-01-11",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://exemplo.pt/fhir/extensions/extension-address-v1-1-2",
+                "extension": [
+                  {
+                    "url": "address-type",
+                    "valueCoding": {
+                      "system": "http://spms.min-saude.pt/rnu/extensions/address-types",
+                      "code": "MA",
+                      "display": "Main Address"
+                    }
+                  },
+                  {
+                    "url": "county",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.ine.pt",
+                          "code": "11"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "municipality",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.ine.pt",
+                          "code": "1109"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "parish",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.ine.pt",
+                          "code": "110918"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "use": "home",
+            "type": "both",
+            "line": [
+              "RUA PRINCIPAL DO UTENTE, N.Ã‚Âº3 1.Ã‚Âº ESQ",
+              "BRAGA"
+            ],
+            "city": "AZUEIRA",
+            "district": "LISBOA",
+            "postalCode": "2665-009",
+            "country": "PT"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "M",
+              "display": "Casado"
+            }
+          ]
+        },
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "O",
+                    "display": "Other"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "given": [
+                "JOAO"
+              ]
+            },
+            "address": {
+              "extension": [
+                {
+                  "url": "http://exemplo.pt/fhir/extensions/extension-address-v1-1-2",
+                  "extension": [
+                    {
+                      "url": "address-type",
+                      "valueCoding": {
+                        "system": "https://spmspt.atlassian.net/wiki/spaces/DIS/pages/4269637679/Tabela+0190+-+Address+type",
+                        "code": "C",
+                        "display": "Current Or Temporary"
+                      }
+                    },
+                    {
+                      "url": "county",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://www.ine.pt",
+                            "code": "03"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url": "municipality",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://www.ine.pt",
+                            "code": "0303"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url": "parish",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://www.ine.pt",
+                            "code": "030325"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "postal",
+              "line": [
+                "RUA DO CORREIO, N.Ã‚Âº 3"
+              ],
+              "city": "MIRE DE TIBÃƒÆ’ES",
+              "district": "BRAGA",
+              "postalCode": "4700-565",
+              "country": "PT"
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "C",
+                    "display": "Emergency Contact"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "ANTONIETA",
+              "given": [
+                "ANA",
+                "MAE",
+                "DA"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "210000001",
+                "use": "home"
+              },
+              {
+                "system": "phone",
+                "value": "910000222",
+                "use": "mobile"
+              }
+            ]
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code": "FTH",
+                    "display": "father"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "SILVA",
+              "given": [
+                "JOAO"
+              ]
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code": "MTH",
+                    "display": "mother"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "SANTOS",
+              "given": [
+                "MARIA"
+              ]
+            }
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/f04a8a41-87e6-3593-883a-91b615e47c54"
+          },
+          {
+            "reference": "Organization/5b9e9d1a-425c-31a1-b9f1-740ba4e0c2e5"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/fcea920f-7412-35da-bbe0-cf42b8c93759"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Patient?identifier=SONHO|395381"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "f04a8a41-87e6-3593-883a-91b615e47c54",
+        "name": [
+          {
+            "use": "usual",
+            "family": "TORRES",
+            "given": [
+              "ANA"
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Practitioner?name=TORRES"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fcea920f-7412-35da-bbe0-cf42b8c93759",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "ACSS",
+            "value": "1234567"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Organization?identifier=SONHO|1234567"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5b9e9d1a-425c-31a1-b9f1-740ba4e0c2e5",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "ACSS",
+            "value": "1030300"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Organization?identifier=SONHO|1030300"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "056abcef-511d-3570-b34e-59631a949d75",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "ACSS",
+            "value": "935601"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Organization?identifier=SONHO|935601"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "paymentBy": [
+          {
+            "party": {
+              "reference": "Organization/056abcef-511d-3570-b34e-59631a949d75"
+            }
+          }
+        ],
+        "beneficiary": {
+          "reference": "Patient/76da93ce-d0e7-429f-af89-9ebf2c0795a0"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Coverage?name=76da93ce-d0e7-429f-af89-9ebf2c0795a0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "0040e52f-85c7-3d99-b3dd-4c6431285d30",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "ACSS",
+            "value": "935640"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Organization?identifier=SONHO|935640"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "paymentBy": [
+          {
+            "party": {
+              "reference": "Organization/0040e52f-85c7-3d99-b3dd-4c6431285d30"
+            }
+          }
+        ],
+        "beneficiary": {
+          "reference": "Patient/76da93ce-d0e7-429f-af89-9ebf2c0795a0"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Coverage?name=76da93ce-d0e7-429f-af89-9ebf2c0795a0"
+      }
+    }
+  ]
+}
