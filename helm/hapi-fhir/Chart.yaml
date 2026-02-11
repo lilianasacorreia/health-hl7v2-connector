@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hl7-v2-connector
+description: HL7 v2 Connector for HealthDataPlatform
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
