@@ -1,6 +1,6 @@
 image:
-  repository: your-registry/hl7-v2-connector
-  tag: "latest"
+  repository: ghcr.io/lilianasacorreia/hl7-v2-connector
+  tag: "0.1.0"
   pullPolicy: IfNotPresent
 
 service:
