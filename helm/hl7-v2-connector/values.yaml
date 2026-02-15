@@ -9,11 +9,13 @@ service:
 
 resources: {}
 
-env: []
-# Exemplo:
-# env:
-#   - name: KAFKA_BOOTSTRAP
-#     value: redpanda:9092
+env:
+   - name: KAFKA_BOOTSTRAP_SERVERS
+     value: "redpanda:9092"
+   - name: FHIR_TRANSACTION_INBOUND_TOPIC
+     value: "inbound-fhir-transactions"
+   - name: REQUEST_IN_V2_TOPIC
+     value: "hl7v2-request-in-message"
 
 config:
   enabled: false
