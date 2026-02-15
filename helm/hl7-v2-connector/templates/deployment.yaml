@@ -32,15 +32,13 @@ spec:
               mountPath: /config
             {{- end }}
           readinessProbe:
-            httpGet:
-              path: /health
-              port: {{ .Values.service.port }}
+            tcpSocket:
+              port: { { .Values.service.port } }
             initialDelaySeconds: 10
             periodSeconds: 10
           livenessProbe:
-            httpGet:
-              path: /health
-              port: {{ .Values.service.port }}
+            tcpSocket:
+              port: { { .Values.service.port } }
             initialDelaySeconds: 20
             periodSeconds: 20
           resources:

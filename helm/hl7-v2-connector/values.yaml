@@ -5,7 +5,7 @@ image:
 
 service:
   type: ClusterIP
-  port: 8081   # ajusta se o teu conector usar outra porta
+  port: 2575
 
 resources: {}
 
